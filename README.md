@@ -1,29 +1,36 @@
 # MyoFuse
 
-MyoFuse is a fully AI-based workflow to quantify fusion index in skeletal muscle cell 2D culture in vitro.
-The workflow is currently in v1.0.0.
-In this repository, you will have access to the necessary models, codes and instructions for use.
-The images used to train the classifier are available on zenodo : ...
+**MyoFuse** is a fully AI-based workflow to quantify the fusion index in skeletal muscle cell 2D culture in vitro. The workflow is currently at version **v1.0.0**.  
+In this repository, you will find all the necessary models, code, and instructions for use. The images used to train the classifier are available on [Zenodo](#link).
 
-## How to use MyoFuse
+---
 
-You will find instructions to use the worklfow in the "How_to_use" folder of this project. Instructions to retrain the classifier model are also available.
-In the "Setup" section, tou will find the "requirements.txt" that you will need to install to setup your python environment.
-The classifier model "MyoFuse.pth" can be downloaded from the "Models" section. Simply add the "Svetlana" folder to your project folder as explained in the instructions if you use the Svetlana plugin for classification.
-The segmentation model for Cellpose is avalaible in the last release.
-You will find the python notebooks to process your images in the "Codes" section.
+## How to Use MyoFuse
+
+Detailed instructions to use the workflow can be found in the `How_to_use` folder within this project. Instructions for retraining the classifier model are also available. Here's a quick overview of the setup process:
+
+1. **Setup Environment**:  
+   In the `Setup` folder, you will find a `requirements.txt` file that lists the necessary dependencies. Use it to set up your Python environment:  
+   ```bash
+   pip install -r requirements.txt
+
+2. **Download Models**:
+   The classifier model, `MyoFuse.pth`, is available in the `Models` section of this repository. Download it and place it in the appropriate folder as described in the instructions.If you are 
+   using the Svetlana plugin for classification, add the `Svetlana` folder to your project directory, as explained in the instructions.The segmentation model for Cellpose is included in the 
+   latest release of this repository.
+   
+3. **Download Models**:
+    Use the Python notebooks provided in the `Codes` section to process your images and quantify the fusion index. Follow the step-by-step guide in the `How_to_use` folder to ensure accurate 
+    results.
 
 ## Licence
-
 This project is licensed under the MIT License.
 
 ## Citation
-
 If you use MyoFuse, please cite ...
 
 ## Contact
-
 If you have any questions or suggestions, feel free to reach out:
 
-Email: lair.b1jamin@gmail.com
+Email: lair.b1jamin@gmail.com 
 GitHub: BenLair
