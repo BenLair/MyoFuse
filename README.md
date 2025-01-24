@@ -15,13 +15,11 @@ Detailed instructions to use the workflow are provided in the pdf file. Instruct
    pip install -r requirements.txt
 
 2. **Download Models**:
-   The classifier model, `MyoFuse.pth`, is available in the `Models` section of this repository. Download it and place it in the appropriate folder as described in the instructions.If you are 
-   using the Svetlana plugin for classification, add the `Svetlana` folder to your project directory, as explained in the instructions.The segmentation model for Cellpose is included in the 
-   latest release of this repository.
+   The classifier model, `MyoFuse.pth`, is available in the `Models` section of this repository. Download it and place it in the appropriate folder as described in the instructions. If you are using the Svetlana plugin for classification, add the `Svetlana` folder to your project directory, as explained in the instructions. The segmentation model for Cellpose is included in the latest release of this repository.
    
 3. **Download Models**:
-    Use the Python notebooks provided in the `Codes` section to process your images and quantify the fusion index. Follow the step-by-step guide in the `How_to_use` folder to ensure accurate 
-    results.
+    Use the Python notebooks provided in the `Codes` section to process your images and quantify the fusion index. Follow the step-by-step guide M̀yoFuse: How to 
+Use` to ensure accurate results.
 
 ## Licence
 This project is licensed under the MIT License.
