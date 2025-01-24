@@ -32,5 +32,4 @@ If you use MyoFuse, please cite ...
 ## Contact
 If you have any questions or suggestions, feel free to reach out:
 
-Email: lair.b1jamin@gmail.com 
-GitHub: BenLair
+Email: lair.b1jamin@gmail.com
