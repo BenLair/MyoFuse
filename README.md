@@ -7,7 +7,7 @@ In this repository, you will find all the necessary models, code, and instructio
 
 ## How to Use MyoFuse
 
-Detailed instructions to use the workflow can be found in the `How_to_use` folder within this project. Instructions for retraining the classifier model are also available. Here's a quick overview of the setup process:
+Detailed instructions to use the workflow are provided in the pdf file. Instructions for retraining the classifier model are also available. Here's a quick overview of the setup process:
 
 1. **Setup Environment**:  
    In the `Setup` folder, you will find a `requirements.txt` file that lists the necessary dependencies. Use it to set up your Python environment:  
