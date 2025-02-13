@@ -17,9 +17,12 @@ Detailed instructions to use the workflow are provided in the pdf file. Instruct
 2. **Download Models**:
    The classifier model, `MyoFuse.pth`, is available in the `Models` section of this repository. Download it and place it in the appropriate folder as described in the instructions. If you are using the Svetlana plugin for classification, add the `Svetlana` folder to your project directory, as explained in the instructions. The segmentation model for Cellpose is included in the latest release of this repository.
    
-3. **Download Models**:
+3. **Process Your Images**:
     Use the Python notebooks provided in the `Codes` section to process your images and quantify the fusion index. Follow the step-by-step guide M̀yoFuse: How to 
 Use` to ensure accurate results.
+
+4. **Test Images**:
+    If you want to make sure that your configuration is working, you can download test images from the `Test Images' release to run the MyoFuse.ipynb code. A large image is also provided to test potential RAM and GPU memory issues.
 
 ## Licence
 This project is licensed under the MIT License.
