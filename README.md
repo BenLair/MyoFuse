@@ -1,7 +1,7 @@
 # MyoFuse
 
 **MyoFuse** is a fully AI-based workflow to quantify the fusion index in skeletal muscle cell 2D culture in vitro. The workflow is currently at version **v1.0.0**.  
-In this repository, you will find all the necessary models, code, and instructions for use. The images used to train the classifier are available on [Zenodo(https://zenodo.org/records/14731491)](#link).
+In this repository, you will find all the necessary models, code, and instructions for use. The images used to train the classifier are available on [Zenodo](https://zenodo.org/records/14731491).
 
 ---
 
