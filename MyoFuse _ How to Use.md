@@ -8,13 +8,14 @@ Perform nuclei segmentation and classification with a single pipeline.
 The easiest way to get started is by installing the [Anaconda](https://www.anaconda.com/) distribution, which includes both Python and many useful libraries.
 
 ### Set up your environment
+Download the `requirements.txt` file from the `Setup` section.
 Create a Python 3.9 environment and install the required dependencies by running the following commands in your shell:
 
 ```bash
 # Example commands:
 conda create -n MyoFuse_env python=3.9
 conda activate MyoFuse_env
-pip install requirements.txt
+pip install -r requirements.txt
 # Make sure to be in the directory containing your requirements.txt file
 ```
 
