@@ -13,6 +13,7 @@ Detailed instructions to use the workflow are provided in the `MyoFuse: How to U
    In the `Setup` folder, you will find a `requirements.txt` file that lists the necessary dependencies. Use it to set up your Python environment:  
    ```bash
    pip install -r requirements.txt
+   This will also napari and the svetlana plugin if you need to train your own model or retrain the classifier.
 
 2. **Download Models**:
    The classifier model, `MyoFuse.pth`, is available in the `Models` section of this repository. Download it and place it in the appropriate folder as described in the instructions. If you are using the Svetlana plugin for classification, add the `Svetlana` folder to your project directory, as explained in the instructions. The segmentation model for Cellpose is included in the first release of this repository.
