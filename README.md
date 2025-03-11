@@ -7,14 +7,10 @@ In this repository, you will find all the necessary models, code, and instructio
 
 ## How to Use MyoFuse
 
-Detailed instructions to use the workflow are provided in the `MyoFuse: How to Use`pdf file. Instructions for retraining the classifier are also available. Here's a quick overview of the setup process:
+Detailed instructions to use the workflow are provided in the `MyoFuse : How to Use.md` guide. Instructions for retraining the classifier are also available. Here's a quick overview of the setup process:
 
 1. **Setup Environment**:  
-   In the `Setup` folder, you will find a `requirements.txt` file that lists the necessary dependencies. Use it to set up your Python environment:  
-   ```bash
-   conda create -n MyoFuse_env python=3.9
-   pip install -r requirements.txt
-   ```
+   In the `Setup` folder, you will find a `requirements.txt` file that lists the necessary dependencies. Use it to set up your Python 3.9 environment.  
    This will also install napari and the svetlana plugin if you need to train your own model or retrain the classifier.
 
 2. **Download Models**:
