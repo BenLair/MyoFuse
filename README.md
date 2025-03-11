@@ -20,7 +20,7 @@ Detailed instructions to use the workflow are provided in the `MyoFuse : How to 
     Use the Python notebooks provided in the `Codes` section to process your images and quantify the fusion index. Follow the step-by-step guide `MyoFuse: How to Use` to ensure accurate results.
 
 4. **Test Images**:
-    If you want to make sure that your configuration is working, you can download test images from the `Test Images` release to run the MyoFuse.ipynb code. A large image is also provided to test potential RAM and GPU memory issues.
+    If you want to make sure that your configuration is working, you can download test images from the `Test Images` release to run the `MyoFuse.ipynb` code. A large image is also provided to test potential RAM and GPU memory issues.
 
 ## Licence
 This project is licensed under the MIT License.
