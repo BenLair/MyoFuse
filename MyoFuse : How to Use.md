@@ -10,35 +10,21 @@ The easiest way to get started is by installing the [Anaconda](https://www.anaco
 ### Set up your environment
 
 #### Linux
-Download the `requirements_linux.txt` file from the `Setup` section.
+Download the `myofuse_linux.yml` file from the `Setup` section.
 Create a Python 3.9 environment and install the required dependencies by running the following commands in your shell:
 
 ```bash
-# Example commands:
-conda create -n MyoFuse_env python=3.9
-conda activate MyoFuse_env
-pip install -r requirements_linux.txt
-# Make sure to be in the directory containing your requirements_linux.txt file
+conda env create -f myofuse_linux.yml
+# Make sure to be in the directory containing your requirements_linux.txt file of 
 ```
 #### Windows
-Download the `requirements_linux.txt` file from the `Setup` section.
-Create a Python 3.10 environment and install the required dependencies by running the following commands in your shell:
+Follow the same procedure using the `myofuse_win.yml` file from the `Setup` section.
 
-```powershell
-# Example commands:
-conda create -n MyoFuse_env python=3.10 pip
-conda activate MyoFuse_env
-conda config --env --add channels conda-forge
-conda config --env --add channels pytorch
-conda config --env --add channels nvidia
-conda install -n MyoFuse_env -c nvidia cuda-toolkit=12.6.0
-python -m pip install -r requirements_windows.txt
-# Make sure to be in the directory containing your requirements_windows.txt file
 ```
 
 ### Download necessary files
 Download the models and code required to run MyoFuse.
-- The notebook `MyoFuse.ipynb` can be found in the `Codes` section of the repository.
+- The notebooks `MyoFuse_linux.ipynb` and `MyoFuse_win.ipynb` can be found in the `Codes` section of the repository.
 - The nuclei segmentation model `MyoNuclei` is provided in the first release of the repository.
 - The classification model `MyoFuse.pth` and its configuration file `Config.json` are available in the `Svetlana` folder under `Models/Svetlana`.
 
@@ -57,7 +43,7 @@ Create a folder in the directory of your choice to hold the images you want to p
 
 Optionally, you can place the following files in the same folder for convenience:
 
-- `MyoFuse.ipynb`
+- `MyoFuse_linux.ipynb` or `MyoFuse_win.ipynb`
 - `MyoNuclei`
 - `MyoFuse.pth`
 - `Config.json`
@@ -65,13 +51,13 @@ Optionally, you can place the following files in the same folder for convenience
 > **Note:** This is not mandatory, as you can specify different paths for these files when running the workflow. However, ensure that `MyoFuse.pth` and `Config.json` are located in the same directory.
 
 ### 2. Launch the notebook with Voila
-In your shell, navigate (`cd`) to the folder that contains `MyoFuse.ipynb`.
+In your shell, navigate (`cd`) to the folder that contains `MyoFuse_linux.ipynb` or `MyoFuse_win.ipynb`
 Activate your MyoFuse environment, then run the notebook:
 
 ```bash
 cd Desktop/Images  # Example directory
 conda activate MyoFuse_env
-voila MyoFuse.ipynb
+voila MyoFuse_linux.ipynb
 ```
 
 This will open a new tab in your web browser with the MyoFuse graphical interface, allowing you to process your images.
