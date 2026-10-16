@@ -4,7 +4,7 @@ Use images from the cell type and acquisition conditions you plan to analyze. Ke
 
 ## Prepare images and masks
 
-Use `MyoFuse_linux_v1.1.0-rc.4.ipynb` or `MyoFuse_win_v1.1.0-rc.4.ipynb` in Voilà to split channels and segment nuclei. Outputs are stored in `Images/`, `Nuclei/`, and `Masks/` inside the selected image folder. Check masks visually before annotation.
+Use `MyoFuse_linux_v1.1.0-rc.5.ipynb` or `MyoFuse_win_v1.1.0-rc.5.ipynb` in Voilà to split channels and segment nuclei. Outputs are stored in `Images/`, `Nuclei/`, and `Masks/` inside the selected image folder. Check masks visually before annotation.
 
 **Normalization in the candidate notebook happens during classification.** If you need the `Normalized_images/` files for training, enable both **Run classification and quantify FI** and **Save normalized images**, with a valid classifier and `Config.json`. Running splitting and segmentation alone does not create them. You can alternatively normalize training images separately with a documented method.
 
