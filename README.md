@@ -2,7 +2,7 @@
 
 MyoFuse quantifies the fusion index (FI) in two-channel fluorescence images of skeletal muscle cell cultures. It segments nuclei with Cellpose, classifies each detected nucleus as inside or outside a myotube, and reports the percentage classified as inside.
 
-**Current release candidate: v1.1.0-rc.4.** The published v1.0.0 notebooks remain in `Codes/`. The candidate notebooks are separate so existing workflows can be compared before adopting the update. This candidate has passed synthetic workflow checks; image reading and inference still need validation on representative microscopy files and the released models.
+**Current release candidate: v1.1.0-rc.5.** The published v1.0.0 notebooks remain in `Codes/`. The candidate notebooks are separate so existing workflows can be compared before adopting the update. This candidate has passed synthetic workflow checks; image reading and inference still need validation on representative microscopy files and the released models.
 
 ## Quick start
 
@@ -20,10 +20,10 @@ MyoFuse quantifies the fusion index (FI) in two-channel fluorescence images of s
 3. Launch the notebook with Voilà from the repository root:
 
    ```bash
-   voila Codes/MyoFuse_linux_v1.1.0-rc.4.ipynb
+   voila Codes/MyoFuse_linux_v1.1.0-rc.5.ipynb
    ```
 
-   On Windows, run `voila Codes/MyoFuse_win_v1.1.0-rc.4.ipynb`. Select your image folder and model files in the browser interface.
+   On Windows, run `voila Codes/MyoFuse_win_v1.1.0-rc.5.ipynb`. Select your image folder and model files in the browser interface.
 
 4. Use **Launch new analysis** for a fresh run or **Resume analysis** to continue an interrupted run. Image-level results are exported to `Fusion_index.xlsx` in the selected image folder.
 
