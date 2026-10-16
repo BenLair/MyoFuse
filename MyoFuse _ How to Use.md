@@ -1,6 +1,6 @@
 # MyoFuse: How to Use (v1.1.0-rc.4)
 
-This guide describes the Linux and Windows candidate notebooks for two-channel microscopy images. The v1.0.0 notebooks remain in `Codes/` for comparison.
+This guide describes the Linux and Windows notebooks for two-channel microscopy images. The v1.0.0 notebooks remain in `Codes/` for comparison.
 
 ## 1. Install and launch
 
@@ -13,13 +13,13 @@ conda activate myofuse_env
 voila Codes/MyoFuse_linux_v1.1.0-rc.4.ipynb
 ```
 
-On Windows, use `Setup/myofuse_win.yml` and launch `Codes/MyoFuse_win_v1.1.0-rc.4.ipynb`. Run these commands from the folder where you downloaded the repository. Voilà opens the interface in a browser; keep the terminal running during analysis.
+On Windows, use `Setup/myofuse_win.yml` and launch `Codes/MyoFuse_win_v1.1.0-rc.5.ipynb`. Run these commands from the folder where you downloaded the repository. Voilà opens the interface in a browser. Keep the terminal running during analysis.
 
-Download the `MyoNuclei` Cellpose model from the [releases](https://github.com/BenLair/MyoFuse/releases). The classification model `MyoFuse.pth` and `Config.json` are in `Models/Svetlana/`; these two files must remain in the same folder. You can select the models from any location in the interface.
+Download the `MyoNuclei` Cellpose model from the [releases](https://github.com/BenLair/MyoFuse/releases). The classification model `MyoFuse.pth` and `Config.json` are in `Models/Svetlana/`. These two files must remain in the same folder. You can select the models from any location in the interface.
 
 ## 2. Prepare the image folder
 
-Put original two-channel `.tif`, `.tiff`, or `.czi` files in one folder. OME-TIFF is supported. Channel indices start at **0**. The notebook uses the first time point and first Z plane; confirm that these are the planes you intend to measure. The CZI reader is opened without mosaic reconstruction.
+Put original two-channel `.tif`, `.tiff`, or `.czi` files in one folder. OME-TIFF is supported. Channel indices start at **0**. The notebook uses the first time point and first Z plane. Confirm that these are the planes you intend to measure. The CZI reader is opened without mosaic reconstruction.
 
 Use distinct names before the extension: `sample.tif` and `sample.tiff` cannot be processed together because they would produce the same output name.
 
@@ -35,11 +35,11 @@ Corresponding images and masks must have matching filenames, including the exten
 
 ## 3. Set parameters
 
-The interface is arranged in six vertical sections: files, image channels, segmentation, classification, outputs, and run controls.
+The interface is arranged in six sections: files, image channels, segmentation, classification, outputs, and run controls.
 
 | Setting | Meaning |
 | --- | --- |
-| **Myotube channel / Nuclei channel** | Distinct, non-negative channel indices in the original image. |
+| **Myotube channel / Nuclei channel** | Channel indices in the original image. |
 | **Split original channels** | Read original images and write separate `Images/` and `Nuclei/` TIFFs. Turn off if those folders already contain prepared channels. |
 | **Run nuclei segmentation** | Create labeled TIFF masks in `Masks/`. Turn off when using existing masks. |
 | **Cellpose diameter** | Expected nuclear diameter in pixels; `0` requests Cellpose automatic diameter estimation. |
@@ -78,10 +78,6 @@ your_image_folder/
 └── Fusion_index.xlsx        # Image-level summary
 ```
 
-The workbook columns are `Image Name`, `Total Number of Nuclei`, `Nuclei In`, `Nuclei Out`, `Fusion Index (%)`, and `Status`. FI is `100 × Nuclei In / Total Number of Nuclei`. With no detected nuclei, the row has a blank FI and `No nuclei detected` status; a blank FI should not be treated as zero. Failed or skipped images have no completed row.
+The workbook columns are `Image Name`, `Total Number of Nuclei`, `Nuclei In`, `Nuclei Out`, `Fusion Index (%)`, and `Status`. FI is `100 × Nuclei In / Total Number of Nuclei`. Failed or skipped images have no completed row.
 
-`Log/classification_results.json` holds image-level results used to rebuild the workbook. Keep `Log/` when moving a dataset if you intend to use **Resume analysis**. Moving it to a new absolute path can trigger reprocessing because paths are part of the saved checks.
-
-## Current validation scope
-
-The candidate has been checked with synthetic inputs for cumulative resume, changed models, missing masks, no detected nuclei, and interface callbacks. It has not yet been run end-to-end on representative microscopy images with the released models. Validate a small TIFF and CZI dataset, where relevant, before routine use.
+`Log/classification_results.json` holds image-level results used to rebuild the workbook. Keep `Log/` when moving a dataset if you intend to use **Resume analysis**.
