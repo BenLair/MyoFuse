@@ -1,4 +1,4 @@
-# MyoFuse: How to Use (v1.1.0-rc.4)
+# MyoFuse: How to Use (v1.1.0-rc.5)
 
 This guide describes the Linux and Windows notebooks for two-channel microscopy images. The v1.0.0 notebooks remain in `Codes/` for comparison.
 
@@ -10,7 +10,7 @@ Install [Conda](https://docs.conda.io/) and create the environment from the repo
 # Linux
 conda env create -f Setup/myofuse_linux.yml
 conda activate myofuse_env
-voila Codes/MyoFuse_linux_v1.1.0-rc.4.ipynb
+voila Codes/MyoFuse_linux_v1.1.0-rc.5.ipynb
 ```
 
 On Windows, use `Setup/myofuse_win.yml` and launch `Codes/MyoFuse_win_v1.1.0-rc.5.ipynb`. Run these commands from the folder where you downloaded the repository. Voilà opens the interface in a browser. Keep the terminal running during analysis.
